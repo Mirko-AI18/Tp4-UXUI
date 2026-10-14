@@ -1,0 +1,23 @@
+.icon {
+  display: inline-block;
+  flex: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: currentColor;
+  -webkit-mask: var(--icon) center / contain no-repeat;
+  mask: var(--icon) center / contain no-repeat;
+}
+.icon--search { --icon: url("../../assets/icons/search.svg"); }
+.icon--heart { --icon: url("../../assets/icons/heart.svg"); }
+.icon--arrow { --icon: url("../../assets/icons/arrow.svg"); }
+.icon--chevron { --icon: url("../../assets/icons/chevron.svg"); }
+.icon--star { --icon: url("../../assets/icons/star.svg"); }
+.icon--mail { --icon: url("../../assets/icons/mail.svg"); }
+.icon--cat-hot { --icon: url("../../assets/icons/cat-hot.svg"); }
+.icon--cat-cold { --icon: url("../../assets/icons/cat-cold.svg"); }
+.icon--cat-cup { --icon: url("../../assets/icons/cat-cup.svg"); }
+.icon--cat-dessert { --icon: url("../../assets/icons/cat-dessert.svg"); }
+.icon--social-x { --icon: url("../../assets/icons/social-x.svg"); }
+.icon--social-instagram { --icon: url("../../assets/icons/social-instagram.svg"); }
+.icon--social-facebook { --icon: url("../../assets/icons/social-facebook.svg"); }
+.icon--social-linkedin { --icon: url("../../assets/icons/social-linkedin.svg"); }

@@ -1,0 +1,53 @@
+.testimonials { padding-block: var(--space-56); }
+.testimonials__head { margin-bottom: var(--space-40); text-align: center; }
+.testimonials__accent { display: block; color: var(--color-espresso); font: 400 var(--fs-h2) / 1.2 var(--font-accent); }
+.testimonials__track {
+  display: flex;
+  gap: var(--space-16);
+  overflow-x: auto;
+  padding-inline: var(--gutter);
+  scroll-padding-inline: var(--gutter);
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.testimonials__track::-webkit-scrollbar { display: none; }
+.testimonial-card {
+  display: flex;
+  flex: 0 0 85%;
+  flex-direction: column;
+  gap: var(--space-16);
+  padding: var(--space-28);
+  background: var(--color-sand-40);
+  border: 2px solid var(--color-border-soft);
+  border-radius: var(--radius-card);
+  scroll-snap-align: start;
+}
+.testimonial-card__head { display: flex; align-items: center; gap: var(--space-12); }
+.testimonial-card__avatar { width: 3.5rem; height: 3.5rem; border-radius: 50%; object-fit: cover; }
+.testimonial-card__who { display: flex; flex: 1; flex-direction: column; min-width: 0; }
+.testimonial-card__name { font: 600 var(--fs-md) / 1.3 var(--font-ui); }
+.testimonial-card__role { color: var(--color-text-soft); font: 400 var(--fs-sm) / 1.3 var(--font-ui); }
+.testimonial-card__stars {
+  flex: none;
+  width: 7.5rem;
+  color: var(--color-star);
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
+  -webkit-mask-size: 1.5rem 1.5rem;
+  mask-size: 1.5rem 1.5rem;
+  -webkit-mask-position: left;
+  mask-position: left;
+}
+.testimonial-card__text { font: 500 var(--fs-xs) / var(--lh-xs) var(--font-ui); }
+.testimonials__pager { display: flex; justify-content: center; margin-top: var(--space-24); }
+.testimonials__pager a { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; }
+.testimonials__pager a::before { content: ""; width: 0.75rem; height: 0.75rem; border: 1px solid var(--color-muted); border-radius: 50%; background: var(--color-sand); }
+.testimonials__pager a:hover::before { background: var(--color-espresso); }
+@media (min-width: 48rem) {
+  .testimonial-card { flex-basis: calc((100% - var(--space-16)) / 2); }
+}
+@media (min-width: 64rem) {
+  .testimonials__track { justify-content: center; align-items: center; overflow: visible; padding-inline: 0; }
+  .testimonial-card { flex: 0 1 26.0625rem; min-width: 0; }
+  .testimonial-card--featured { flex-basis: 27.5625rem; padding-block: var(--space-40); }
+}

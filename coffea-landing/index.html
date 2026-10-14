@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coffea | Specialty coffee shop</title>
+<meta name="description" content="Coffea serves the richest coffee in the city: freshly roasted beans, desserts and good company.">
+<meta property="og:title" content="Coffea | Specialty coffee shop">
+<meta property="og:description" content="Coffea serves the richest coffee in the city: freshly roasted beans, desserts and good company.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&amp;family=Playfair+Display:wght@500;600;700&amp;family=Poppins:wght@400;500;600&amp;family=Reggae+One&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="header">
+  <div class="container header__bar">
+    <a class="header__logo" href="/">Coffea</a>
+    <input class="visually-hidden header__check" type="checkbox" id="menu" aria-label="Open menu">
+    <label class="header__burger" for="menu"><span></span></label>
+    <nav class="header__nav" aria-label="Main"><ul class="header__list"><li><a class="header__link" href="#">home</a></li><li><a class="header__link" href="#">coffee</a></li><li><a class="header__link" href="#">bakery</a></li><li><a class="header__link" href="#">shop</a></li><li><a class="header__link" href="#">about</a></li><li><a class="header__link" href="#">login</a></li></ul></nav>
+    <button class="header__search" type="button" aria-label="Search"><span class="icon icon--search" aria-hidden="true"></span></button>
+  </div>
+</header>
+<main id="main">
+<section class="hero" aria-labelledby="hero-title">
+  <img class="hero__bg" src="assets/img/hero.jpg" alt="" width="1920" height="1000" fetchpriority="high">
+  <div class="container"><div class="hero__content">
+    <p class="hero__eyebrow">Welcome</p>
+    <h1 class="hero__title" id="hero-title">We serve the richest coffee in the city!</h1>
+    <p class="hero__text">Freshly roasted beans, brewed with care. Come in, sit down and enjoy a cup made just for you.</p>
+    <a class="btn btn--white" href="#coffee-title">Order Now</a>
+  </div></div>
+</section>
+<section class="categories" aria-label="Categories">
+  <ul class="categories__list">
+    <li><a class="categories__link" href="#"><span class="icon icon--cat-hot" aria-hidden="true"></span>Hot Coffee</a></li>
+    <li><a class="categories__link" href="#"><span class="icon icon--cat-cold" aria-hidden="true"></span>Cold Coffee</a></li>
+    <li><a class="categories__link" href="#"><span class="icon icon--cat-cup" aria-hidden="true"></span>Cup Coffee</a></li>
+    <li><a class="categories__link" href="#"><span class="icon icon--cat-dessert" aria-hidden="true"></span>Dessert</a></li>
+  </ul>
+</section>
+<section class="products" aria-labelledby="coffee-title">
+  <div class="container"><h2 class="section-title" id="coffee-title">Our Special Coffee</h2></div>
+  <div class="carousel">
+    <a class="carousel__arrow carousel__arrow--prev" href="#coffee-1" aria-label="Previous products"><span class="icon icon--arrow" aria-hidden="true"></span></a>
+    <ul class="carousel__track">
+<li class="carousel__item" id="coffee-1"><article class="product-card">
+<div class="product-card__media"><img src="assets/img/1.jpg" alt="Lungo coffee" width="334" height="364" loading="lazy" decoding="async"><label class="product-card__fav"><input class="visually-hidden" type="checkbox"><span class="icon icon--heart" aria-hidden="true"></span><span class="visually-hidden">Add Lungo coffee to favorites</span></label></div>
+<h3 class="product-card__title">Lungo coffee</h3>
+<p class="product-card__text">Long, smooth and balanced, pulled from freshly roasted beans.</p>
+<div class="product-card__row"><data class="product-card__price" value="200">Rs. 200</data><a class="btn btn--maroon" href="#">Order Now</a></div>
+</article></li>
+<li class="carousel__item" id="coffee-2"><article class="product-card">
+<div class="product-card__media"><img src="assets/img/2.jpg" alt="Espresso" width="334" height="364" loading="lazy" decoding="async"><label class="product-card__fav"><input class="visually-hidden" type="checkbox"><span class="icon icon--heart" aria-hidden="true"></span><span class="visually-hidden">Add Espresso to favorites</span></label></div>
+<h3 class="product-card__title">Espresso</h3>
+<p class="product-card__text">Short, intense and full of body, the way it should be.</p>
+<div class="product-card__row"><data class="product-card__price" value="200">Rs. 200</data><a class="btn btn--maroon" href="#">Order Now</a></div>
+</article></li>
+<li class="carousel__item" id="coffee-3"><article class="product-card">
+<div class="product-card__media"><img src="assets/img/3.jpg" alt="Cappuccino" width="334" height="364" loading="lazy" decoding="async"><label class="product-card__fav"><input class="visually-hidden" type="checkbox"><span class="icon icon--heart" aria-hidden="true"></span><span class="visually-hidden">Add Cappuccino to favorites</span></label></div>
+<h3 class="product-card__title">Cappuccino</h3>
+<p class="product-card__text">Equal parts espresso, steamed milk and velvety foam.</p>
+<div class="product-card__row"><data class="product-card__price" value="200">Rs. 200</data><a class="btn btn--maroon" href="#">Order Now</a></div>
+</article></li>
+<li class="carousel__item" id="coffee-4"><article class="product-card">
+<div class="product-card__media"><img src="assets/img/4.jpg" alt="Flat white" width="334" height="364" loading="lazy" decoding="async"><label class="product-card__fav"><input class="visually-hidden" type="checkbox"><span class="icon icon--heart" aria-hidden="true"></span><span class="visually-hidden">Add Flat white to favorites</span></label></div>
+<h3 class="product-card__title">Flat white</h3>
+<p class="product-card__text">Silky microfoam over a double shot of espresso.</p>
+<div class="product-card__row"><data class="product-card__price" value="200">Rs. 200</data><a class="btn btn--maroon" href="#">Order Now</a></div>
+</article></li>
+    </ul>
+    <a class="carousel__arrow carousel__arrow--next" href="#coffee-4" aria-label="Next products"><span class="icon icon--arrow" aria-hidden="true"></span></a>
+  </div>
+</section>
+<section class="products" aria-labelledby="dessert-title">
+  <div class="container"><h2 class="section-title" id="dessert-title">Our Special Dessert</h2></div>
+  <div class="carousel">
+    <a class="carousel__arrow carousel__arrow--prev" href="#dessert-1" aria-label="Previous products"><span class="icon icon--arrow" aria-hidden="true"></span></a>
+    <ul class="carousel__track">
+<li class="carousel__item" id="dessert-1"><article class="product-card">
+<div class="product-card__media"><img src="assets/img/5.jpg" alt="Chocolate cake" width="334" height="364" loading="lazy" decoding="async"><label class="product-card__fav"><input class="visually-hidden" type="checkbox"><span class="icon icon--heart" aria-hidden="true"></span><span class="visually-hidden">Add Chocolate cake to favorites</span></label></div>
+<h3 class="product-card__title">Chocolate cake</h3>
+<p class="product-card__text">Dark chocolate sponge with a rich ganache.</p>
+<div class="product-card__row"><data class="product-card__price" value="200">Rs. 200</data><a class="btn btn--maroon" href="#">Order Now</a></div>
+</article></li>
+<li class="carousel__item" id="dessert-2"><article class="product-card">
+<div class="product-card__media"><img src="assets/img/6.jpg" alt="Butter croissant" width="334" height="364" loading="lazy" decoding="async"><label class="product-card__fav"><input class="visually-hidden" type="checkbox"><span class="icon icon--heart" aria-hidden="true"></span><span class="visually-hidden">Add Butter croissant to favorites</span></label></div>
+<h3 class="product-card__title">Butter croissant</h3>
+<p class="product-card__text">Flaky, golden and baked fresh every morning.</p>
+<div class="product-card__row"><data class="product-card__price" value="200">Rs. 200</data><a class="btn btn--maroon" href="#">Order Now</a></div>
+</article></li>
+<li class="carousel__item" id="dessert-3"><article class="product-card">
+<div class="product-card__media"><img src="assets/img/7.jpg" alt="Cheesecake" width="334" height="364" loading="lazy" decoding="async"><label class="product-card__fav"><input class="visually-hidden" type="checkbox"><span class="icon icon--heart" aria-hidden="true"></span><span class="visually-hidden">Add Cheesecake to favorites</span></label></div>
+<h3 class="product-card__title">Cheesecake</h3>
+<p class="product-card__text">Creamy vanilla filling on a crunchy biscuit base.</p>
+<div class="product-card__row"><data class="product-card__price" value="200">Rs. 200</data><a class="btn btn--maroon" href="#">Order Now</a></div>
+</article></li>
+<li class="carousel__item" id="dessert-4"><article class="product-card">
+<div class="product-card__media"><img src="assets/img/8.jpg" alt="Blueberry muffin" width="334" height="364" loading="lazy" decoding="async"><label class="product-card__fav"><input class="visually-hidden" type="checkbox"><span class="icon icon--heart" aria-hidden="true"></span><span class="visually-hidden">Add Blueberry muffin to favorites</span></label></div>
+<h3 class="product-card__title">Blueberry muffin</h3>
+<p class="product-card__text">Soft crumb packed with juicy blueberries.</p>
+<div class="product-card__row"><data class="product-card__price" value="200">Rs. 200</data><a class="btn btn--maroon" href="#">Order Now</a></div>
+</article></li>
+    </ul>
+    <a class="carousel__arrow carousel__arrow--next" href="#dessert-4" aria-label="Next products"><span class="icon icon--arrow" aria-hidden="true"></span></a>
+  </div>
+</section>
+<section class="promo" aria-labelledby="promo-title">
+  <img class="promo__img promo__img--left" src="assets/img/9.png" alt="" width="520" height="335" loading="lazy" decoding="async">
+  <div>
+    <h2 class="promo__title" id="promo-title">Check Out Our Best Coffee Beans</h2>
+    <a class="btn btn--dark promo__btn" href="#">Explore Our Products <span class="icon icon--chevron" aria-hidden="true"></span></a>
+  </div>
+  <img class="promo__img promo__img--right" src="assets/img/10.png" alt="" width="503" height="335" loading="lazy" decoding="async">
+</section>
+<section class="testimonials" aria-labelledby="testimonials-title">
+  <div class="container testimonials__head">
+    <p class="testimonials__accent">Come and Join</p>
+    <h2 class="section-title" id="testimonials-title">Our Happy Customers</h2>
+  </div>
+  <div class="testimonials__track">
+<figure class="testimonial-card" id="t-1">
+<figcaption class="testimonial-card__head"><img class="testimonial-card__avatar" src="assets/img/reseña.jpg" alt="" width="56" height="56" loading="lazy" decoding="async"><span class="testimonial-card__who"><strong class="testimonial-card__name">James Smith</strong><span class="testimonial-card__role">Entrepreneur</span></span><span class="icon icon--star testimonial-card__stars" role="img" aria-label="5 out of 5 stars"></span></figcaption>
+<blockquote class="testimonial-card__text"><p>Great coffee, friendly staff and a cozy place to work. I stop by every morning before heading to the office.</p></blockquote>
+</figure>
+<figure class="testimonial-card testimonial-card--featured" id="t-2">
+<figcaption class="testimonial-card__head"><img class="testimonial-card__avatar" src="assets/img/reseña.jpg" alt="" width="56" height="56" loading="lazy" decoding="async"><span class="testimonial-card__who"><strong class="testimonial-card__name">James Smith</strong><span class="testimonial-card__role">Entrepreneur</span></span><span class="icon icon--star testimonial-card__stars" role="img" aria-label="5 out of 5 stars"></span></figcaption>
+<blockquote class="testimonial-card__text"><p>Great coffee, friendly staff and a cozy place to work. I stop by every morning before heading to the office.</p></blockquote>
+</figure>
+<figure class="testimonial-card" id="t-3">
+<figcaption class="testimonial-card__head"><img class="testimonial-card__avatar" src="assets/img/reseña.jpg" alt="" width="56" height="56" loading="lazy" decoding="async"><span class="testimonial-card__who"><strong class="testimonial-card__name">James Smith</strong><span class="testimonial-card__role">Entrepreneur</span></span><span class="icon icon--star testimonial-card__stars" role="img" aria-label="5 out of 5 stars"></span></figcaption>
+<blockquote class="testimonial-card__text"><p>Great coffee, friendly staff and a cozy place to work. I stop by every morning before heading to the office.</p></blockquote>
+</figure>
+  </div>
+  <nav class="testimonials__pager" aria-label="Testimonials"><a href="#t-1" aria-label="Testimonial 1"></a><a href="#t-2" aria-label="Testimonial 2"></a><a href="#t-3" aria-label="Testimonial 3"></a></nav>
+</section>
+<section class="newsletter" aria-labelledby="newsletter-title">
+  <img class="newsletter__img newsletter__img--left" src="assets/img/newsletter-beans.svg" alt="" width="482" height="321" loading="lazy" decoding="async">
+  <div>
+    <h2 class="newsletter__title" id="newsletter-title">Join in and get 15% off!</h2>
+    <p class="newsletter__sub">Subscribe to our newsletter and get 15% off your first order.</p>
+    <form class="newsletter__form" action="#" method="get">
+      <div class="newsletter__field"><span class="icon icon--mail" aria-hidden="true"></span><label class="visually-hidden" for="email">Email address</label><input class="newsletter__input" id="email" name="email" type="email" required autocomplete="email" placeholder="Enter your email"></div>
+      <button class="btn btn--dark" type="submit">Subscribe</button>
+    </form>
+  </div>
+  <img class="newsletter__img newsletter__img--right" src="assets/img/newsletter-beans.svg" alt="" width="482" height="321" loading="lazy" decoding="async">
+</section>
+</main>
+<footer class="footer">
+  <div class="container footer__grid">
+    <a class="footer__logo" href="/">Coffea</a>
+    <nav aria-label="Privacy"><h3 class="footer__title">Privacy</h3><ul class="footer__list"><li><a class="footer__link" href="#">Privacy policy</a></li><li><a class="footer__link" href="#">Terms of use</a></li><li><a class="footer__link" href="#">Cookies</a></li></ul></nav><nav aria-label="Services"><h3 class="footer__title">Services</h3><ul class="footer__list"><li><a class="footer__link" href="#">Plans &amp; pricing</a></li><li><a class="footer__link" href="#">Delivery</a></li><li><a class="footer__link" href="#">Catering</a></li></ul></nav><nav aria-label="About us"><h3 class="footer__title">About us</h3><ul class="footer__list"><li><a class="footer__link" href="#">Our story</a></li><li><a class="footer__link" href="#">Our team</a></li><li><a class="footer__link" href="#">Careers</a></li></ul></nav><nav aria-label="Information"><h3 class="footer__title">Information</h3><ul class="footer__list"><li><a class="footer__link" href="#">Contact</a></li><li><a class="footer__link" href="#">FAQ</a></li><li><a class="footer__link" href="#">Locations</a></li></ul></nav>
+    <div><h3 class="footer__title">Social media</h3><ul class="footer__social"><li><a href="#" aria-label="X (Twitter)"><span class="icon icon--social-x" aria-hidden="true"></span></a></li><li><a href="#" aria-label="Instagram"><span class="icon icon--social-instagram" aria-hidden="true"></span></a></li><li><a href="#" aria-label="Facebook"><span class="icon icon--social-facebook" aria-hidden="true"></span></a></li><li><a href="#" aria-label="LinkedIn"><span class="icon icon--social-linkedin" aria-hidden="true"></span></a></li></ul></div>
+  </div>
+</footer>
+</body>
+</html>

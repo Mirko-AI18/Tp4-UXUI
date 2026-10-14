@@ -1,0 +1,14 @@
+.container {
+  width: calc(100% - 2 * var(--gutter));
+  max-width: var(--container);
+  margin-inline: auto;
+}
+
+.error {
+  min-height: 60vh;
+  padding: 10rem var(--gutter) var(--space-56);
+  background: var(--color-espresso);
+  color: var(--color-white);
+  text-align: center;
+  --focus-ring: var(--color-white);
+}
