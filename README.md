@@ -1,29 +1,19 @@
-# Coffea: landing page (HTML + CSS)
+# Coffea - Landing Page (TP4 UX/UI)
 
-Landing estática de una página, sin JavaScript. TP4, Diseño UX-UI 2026.
+Trabajo práctico de la materia UX/UI. Es una landing page para "Coffea", hecha de forma responsive y accesible.
 
-## Estructura
-- `index.html`, `404.html`, `netlify.toml`
-- `css/`: `main.css` importa las capas (`tokens → base → layout → components → utilities`)
-- `css/components/`: un archivo por componente (BEM)
-- `assets/`: `img/` (placeholders SVG), `icons/` (SVG monocromos, se tiñen con `mask`)
+## Links del proyecto
+- Sitio subido a Netlify: https://curiosa-torrone-17f71f.netlify.app
+- Repositorio en GitHub: https://github.com/Mirko-AI18/Tp4-UXUI
 
-## Convenciones
-BEM, mobile-first, `rem` y `clamp()`, cero valores sueltos de color/fuente/radio (todo en `tokens.css`).
-Breakpoints: md 48rem, lg 64rem, xl 90rem.
+## Tecnologías usadas
+- HTML5 semántico
+- CSS3 puro (Flexbox, Grid, variables CSS, sin frameworks ni librerías)
+- Netlify para el hosting
 
-## Levantar en local
-Abrir la carpeta en VS Code y usar la extensión **Live Server** sobre `index.html`
-(los íconos usan `mask`, por lo que no funcionan abriendo el archivo con `file://`).
-
-## Pendiente
-- Reemplazar placeholders de `assets/img` por las fotos exportadas del Figma (AVIF/WebP + JPG con `<picture>`, ≤ 1,5 MB en total).
-- Extraer `--color-star` del SVG de estrellas del Figma.
-- Confirmar idioma (`lang`), moneda ("Rs.") y licencia de las fotos de stock.
-- Con caché `immutable`, renombrar con versión los CSS/assets modificados (p. ej. `main.v2.css`).
-
-## Deploy (Netlify)
-1. Subir el repo a GitHub/GitLab.
-2. En Netlify: *Add new site → Import from Git*. Sin build command, publish directory `.`
-3. `main` publica a producción; cada Pull Request genera un Deploy Preview.
-4. Medir Lighthouse sobre la URL de producción.
+## Estructura del proyecto
+- assets/: imágenes e íconos
+- css/: archivos de estilos organizados por componentes
+- index.html: página principal
+- 404.html: página de error
+- netlify.toml: archivo de configuración para el deploy en Netlify
